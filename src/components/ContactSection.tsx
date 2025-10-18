@@ -83,7 +83,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-bold">Email</h4>
-                    <p className="text-sm text-muted-foreground">contact@maksalmina.com</p>
+                    <p className="text-sm text-muted-foreground">maksalbusiness@gmail.com</p>
                   </div>
                 </div>
 
@@ -93,7 +93,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-bold">GitHub</h4>
-                    <p className="text-sm text-muted-foreground">github.com/maksalmina</p>
+                    <p className="text-sm text-muted-foreground">github.com/maksalarina12</p>
                   </div>
                 </div>
 
@@ -103,7 +103,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-bold">LinkedIn</h4>
-                    <p className="text-sm text-muted-foreground">linkedin.com/in/maksalmina</p>
+                    <p className="text-sm text-muted-foreground">linkedin.com/in/maksalmina-arina-21688734a</p>
                   </div>
                 </div>
               </div>
@@ -120,7 +120,7 @@ export const ContactSection = () => {
                     <Github className="w-6 h-6" />
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/maksalmina-arina-21688734a/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-4 rounded-full bg-card border border-border hover:border-primary/50 hover:scale-110 transition-all duration-300"
@@ -128,7 +128,7 @@ export const ContactSection = () => {
                     <Linkedin className="w-6 h-6" />
                   </a>
                   <a
-                    href="mailto:contact@example.com"
+                    href="mailto:maksalbusiness@gmail.com"
                     className="p-4 rounded-full bg-card border border-border hover:border-primary/50 hover:scale-110 transition-all duration-300"
                   >
                     <Mail className="w-6 h-6" />
