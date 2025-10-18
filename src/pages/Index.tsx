@@ -2,7 +2,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { Navigation } from "@/components/Navigation";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
-import { SkillsSection } from "@/components/SkillsSection";
+import { CertificatesSection } from "@/components/CertificatesSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { ToolsSection } from "@/components/ToolsSection";
 import { ContactSection } from "@/components/ContactSection";
@@ -14,7 +14,7 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       <AboutSection />
-      <SkillsSection />
+      <CertificatesSection />
       <ProjectsSection />
       <ToolsSection />
       <ContactSection />

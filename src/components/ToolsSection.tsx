@@ -26,7 +26,7 @@ export const ToolsSection = () => {
   ];
 
   return (
-    <section id="tools" className="relative py-24 md:py-32 bg-muted/30">
+    <section id="tools" className="relative py-24 md:py-32 bg-gradient-to-b from-background to-muted/30 overflow-hidden">
       <div className="container px-6 md:px-12">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -43,7 +43,7 @@ export const ToolsSection = () => {
             return (
               <div
                 key={index}
-                className="group p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg flex flex-col items-center text-center animate-fade-in hover:scale-105"
+                className="group p-6 rounded-2xl bg-card/80 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:scale-110 hover:-translate-y-2 flex flex-col items-center text-center animate-fade-in"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
                 <div className="mb-4 p-4 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors">

@@ -38,7 +38,7 @@ export const ProjectsSection = () => {
   }, []);
 
   return (
-    <section id="projects" className="relative py-24 md:py-32">
+    <section id="projects" className="relative py-24 md:py-32 bg-gradient-to-b from-muted/20 to-background overflow-hidden">
       <div className="container px-6 md:px-12">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -63,7 +63,7 @@ export const ProjectsSection = () => {
             {repos.map((repo, index) => (
               <div
                 key={repo.id}
-                className="group p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg flex flex-col animate-fade-in"
+                className="group p-6 rounded-2xl bg-card/80 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:scale-105 hover:-translate-y-2 flex flex-col animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex-1">

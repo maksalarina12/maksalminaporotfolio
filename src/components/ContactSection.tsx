@@ -55,7 +55,7 @@ export const ContactSection = () => {
       <div className="mt-24 pt-8 border-t border-border">
         <div className="container px-6 md:px-12">
           <p className="text-center text-muted-foreground">
-            © {new Date().getFullYear()} Arym. Crafted with passion and code.
+            © {new Date().getFullYear()} MAKSALMINA. Crafted with passion and code.
           </p>
         </div>
       </div>

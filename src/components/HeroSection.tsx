@@ -26,14 +26,14 @@ export const HeroSection = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image with Blur */}
       <div className="absolute inset-0 z-0">
         <img
           src={isDark ? backgroundDark : backgroundLight}
           alt="Background"
-          className="w-full h-full object-cover transition-opacity duration-700"
+          className="w-full h-full object-cover transition-opacity duration-700 blur-sm"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/30 to-background/90" />
       </div>
 
       {/* Floating Logo */}
@@ -58,7 +58,7 @@ export const HeroSection = () => {
 
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
               Hi, I'm <br />
-              <span className="text-gradient">Arym</span>
+              <span className="text-gradient">MAKSALMINA</span>
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground max-w-xl">
@@ -100,7 +100,7 @@ export const HeroSection = () => {
               <div className="relative p-8">
                 <img
                   src={isDark ? logoMidRightDark : logoMidRightLight}
-                  alt="Arym Logo"
+                  alt="MAKSALMINA Logo"
                   className="w-72 h-72 md:w-96 md:h-96 object-contain drop-shadow-2xl animate-float"
                 />
               </div>
