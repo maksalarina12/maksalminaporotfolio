@@ -43,7 +43,7 @@ export const AboutSection = () => {
 
             {/* About Text */}
             <div className="space-y-6 animate-slide-in-right backdrop-blur-sm">
-              <h2 className="text-4xl md:text-5xl font-bold">
+              <h2 className="text-4xl md:text-5xl font-extrabold">
                 About <span className="text-gradient">Me</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
@@ -72,7 +72,7 @@ export const AboutSection = () => {
                 <div className="mb-4 inline-flex p-4 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors">
                   <Icon className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{skill.title}</h3>
+                <h3 className="text-xl font-extrabold mb-3">{skill.title}</h3>
                 <p className="text-muted-foreground">{skill.description}</p>
               </div>
             );

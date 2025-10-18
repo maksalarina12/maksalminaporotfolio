@@ -41,7 +41,7 @@ export const ProjectsSection = () => {
     <section id="projects" className="relative py-24 md:py-32 bg-gradient-to-b from-muted/20 to-background overflow-hidden">
       <div className="container px-6 md:px-12">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
             My <span className="text-gradient">Projects</span>
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -67,7 +67,7 @@ export const ProjectsSection = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-extrabold mb-3 group-hover:text-primary transition-colors">
                     {repo.name}
                   </h3>
                   <p className="text-muted-foreground text-sm mb-4 line-clamp-2">

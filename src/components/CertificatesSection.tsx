@@ -1,36 +1,42 @@
-import { Award } from "lucide-react";
+import { Award, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const CertificatesSection = () => {
   const certificates = [
     {
-      title: "Full Stack Web Development",
-      issuer: "Udemy",
+      title: "Hour Of Code",
+      issuer: "www.code.org",
       date: "2024",
-      description: "Comprehensive course covering React, Node.js, and modern web technologies",
+      description: "How to teach your AI",
+      certificateUrl: "https://drive.google.com/file/d/1D0RQ8CIN2bQo1_iPHG3IIMsyqGaBaAuT/view?usp=sharing",
     },
     {
-      title: "Advanced JavaScript Programming",
+      title: "Junior Network ",
       issuer: "Coursera",
       date: "2023",
       description: "Deep dive into ES6+, async programming, and design patterns",
+      certificateUrl: "https://drive.google.com/file/d/your-certificate-id-2/view",
     },
     {
       title: "Cloud Architecture Professional",
       issuer: "AWS",
       date: "2023",
       description: "Cloud infrastructure design and implementation with AWS services",
+      certificateUrl: "https://drive.google.com/file/d/your-certificate-id-3/view",
     },
     {
       title: "Cyber Security Fundamentals",
       issuer: "CompTIA",
       date: "2022",
       description: "Network security, threat detection, and security best practices",
+      certificateUrl: "https://drive.google.com/file/d/your-certificate-id-4/view",
     },
     {
       title: "Database Design & Management",
       issuer: "Oracle",
       date: "2022",
       description: "SQL, NoSQL databases, and database optimization techniques",
+      certificateUrl: "https://drive.google.com/file/d/your-certificate-id-5/view",
     },
   ];
 
@@ -38,7 +44,7 @@ export const CertificatesSection = () => {
     <section id="certificates" className="relative py-24 md:py-32 bg-gradient-to-b from-background to-muted/30 overflow-hidden">
       <div className="container px-6 md:px-12">
         <div className="max-w-3xl mx-auto text-center mb-20 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
             My <span className="text-gradient">Certificates</span>
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -74,7 +80,7 @@ export const CertificatesSection = () => {
                         <Award className="w-6 h-6" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                        <h3 className="text-xl font-extrabold mb-2 group-hover:text-primary transition-colors">
                           {cert.title}
                         </h3>
                         <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
@@ -82,9 +88,18 @@ export const CertificatesSection = () => {
                           <span>•</span>
                           <span>{cert.date}</span>
                         </div>
-                        <p className="text-sm text-muted-foreground leading-relaxed">
+                        <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                           {cert.description}
                         </p>
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="group/btn hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                          onClick={() => window.open(cert.certificateUrl, '_blank')}
+                        >
+                          <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:animate-pulse" />
+                          View Certificate
+                        </Button>
                       </div>
                     </div>
                   </div>

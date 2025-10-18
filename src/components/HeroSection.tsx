@@ -51,17 +51,17 @@ export const HeroSection = () => {
           {/* Text Content */}
           <div className="space-y-6 animate-slide-in-left">
             <div className="inline-block px-4 py-2 rounded-full bg-card/80 backdrop-blur-sm border border-border shadow-sm">
-              <span className="text-sm font-medium text-muted-foreground">
+              <span className="text-sm font-bold text-muted-foreground">
                 Welcome to my portfolio
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+            <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
               Hi, I'm <br />
               <span className="text-gradient">MAKSALMINA</span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-xl">
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-xl font-extrabold">
               Creative Developer & Designer
             </p>
 
@@ -112,7 +112,7 @@ export const HeroSection = () => {
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
         <div className="flex flex-col items-center gap-2 animate-bounce">
-          <span className="text-sm text-muted-foreground">Scroll Down</span>
+          <span className="text-sm font-bold text-muted-foreground">Scroll Down</span>
           <div className="w-6 h-10 border-2 border-muted-foreground/50 rounded-full flex items-start justify-center p-2">
             <div className="w-1.5 h-1.5 bg-muted-foreground/50 rounded-full" />
           </div>

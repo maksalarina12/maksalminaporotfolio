@@ -23,19 +23,38 @@ export const Navigation = () => {
         element: document.getElementById(item.id),
       }));
 
-      const currentSection = sections.find((section) => {
+      // Find the current section based on scroll position
+      let currentSection = null;
+      
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
         if (section.element) {
           const rect = section.element.getBoundingClientRect();
-          return rect.top <= 150 && rect.bottom >= 150;
+          const sectionTop = rect.top;
+          const sectionBottom = rect.bottom;
+          
+          // Check if we're in this section
+          if (sectionTop <= 200 && sectionBottom >= 200) {
+            currentSection = section;
+            break;
+          }
+          
+          // For the last section (contact), if we're near the bottom of the page
+          if (i === sections.length - 1 && window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+            currentSection = section;
+            break;
+          }
         }
-        return false;
-      });
+      }
 
       if (currentSection) {
         setActiveSection(currentSection.id);
       }
     };
 
+    // Initial call to set the correct section on page load
+    handleScroll();
+    
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -64,7 +83,7 @@ export const Navigation = () => {
                 <button
                   onClick={() => scrollToSection(item.id)}
                   className={cn(
-                    "px-4 md:px-6 py-2 rounded-full text-sm md:text-base font-medium transition-all duration-300",
+                    "px-4 md:px-6 py-2 rounded-full text-sm md:text-base font-bold transition-all duration-300",
                     activeSection === item.id
                       ? "bg-primary text-primary-foreground shadow-md"
                       : "text-muted-foreground hover:text-foreground hover:bg-muted/50"

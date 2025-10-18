@@ -3,10 +3,10 @@ import logoThemeDark from "@/assets/logo_theme_dark.png";
 import logoThemeLight from "@/assets/logo_theme_light.png";
 
 export const ThemeToggle = () => {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [theme, setTheme] = useState<"light" | "dark">("dark");
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") as "light" | "dark" || "light";
+    const savedTheme = localStorage.getItem("theme") as "light" | "dark" || "dark";
     setTheme(savedTheme);
     document.documentElement.classList.toggle("dark", savedTheme === "dark");
   }, []);

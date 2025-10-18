@@ -29,7 +29,7 @@ export const ToolsSection = () => {
     <section id="tools" className="relative py-24 md:py-32 bg-gradient-to-b from-background to-muted/30 overflow-hidden">
       <div className="container px-6 md:px-12">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
             Tools & <span className="text-gradient">Software</span>
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -49,7 +49,7 @@ export const ToolsSection = () => {
                 <div className="mb-4 p-4 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors">
                   <Icon className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="font-semibold mb-1">{tool.name}</h3>
+                <h3 className="font-extrabold mb-1">{tool.name}</h3>
                 <p className="text-xs text-muted-foreground">{tool.category}</p>
               </div>
             );
