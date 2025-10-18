@@ -1,4 +1,5 @@
 import { Code2, Palette, Rocket } from "lucide-react";
+import profil from "@/assets/profil.jpg";
 
 export const AboutSection = () => {
   const skills = [
@@ -22,18 +23,43 @@ export const AboutSection = () => {
   return (
     <section id="about" className="relative py-24 md:py-32">
       <div className="container px-6 md:px-12">
-        <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            About <span className="text-gradient">Me</span>
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            I'm a passionate developer who loves creating elegant solutions to complex problems.
-            With a keen eye for design and a deep understanding of modern web technologies,
-            I bring ideas to life through code.
-          </p>
-        </div>
+        <div className="max-w-6xl mx-auto">
+          {/* Profile Section */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+            {/* Profile Photo */}
+            <div className="flex justify-center animate-fade-in">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 blur-3xl" />
+                <div className="relative rounded-3xl overflow-hidden border-4 border-card shadow-2xl w-80 h-80 md:w-96 md:h-96">
+                  <img
+                    src={profil}
+                    alt="Arym Profile"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+            {/* About Text */}
+            <div className="space-y-6 animate-slide-in-right">
+              <h2 className="text-4xl md:text-5xl font-bold">
+                About <span className="text-gradient">Me</span>
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                I'm a passionate developer who loves creating elegant solutions to complex problems.
+                With a keen eye for design and a deep understanding of modern web technologies,
+                I bring ideas to life through code.
+              </p>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                My journey in software development has been driven by curiosity and a constant
+                desire to learn. I specialize in building responsive, user-friendly applications
+                that not only look great but also deliver exceptional user experiences.
+              </p>
+            </div>
+          </div>
+
+          {/* Skills Cards */}
+          <div className="grid md:grid-cols-3 gap-8">
           {skills.map((skill, index) => {
             const Icon = skill.icon;
             return (
@@ -50,6 +76,7 @@ export const AboutSection = () => {
               </div>
             );
           })}
+        </div>
         </div>
       </div>
     </section>

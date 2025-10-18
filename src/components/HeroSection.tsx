@@ -3,7 +3,6 @@ import backgroundLight from "@/assets/background_light.jpg";
 import backgroundDark from "@/assets/background_dark.jpg";
 import logoMidRightLight from "@/assets/logo_mid_right_light.png";
 import logoMidRightDark from "@/assets/logo_mid_right_dark.png";
-import profil from "@/assets/profil.jpg";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -94,15 +93,15 @@ export const HeroSection = () => {
             </div>
           </div>
 
-          {/* Profile Image */}
+          {/* Main Logo */}
           <div className="flex justify-center lg:justify-end animate-slide-in-right">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 blur-3xl" />
-              <div className="relative rounded-3xl overflow-hidden border-4 border-card shadow-2xl w-72 h-72 md:w-96 md:h-96">
+              <div className="relative p-8">
                 <img
-                  src={profil}
-                  alt="Profile"
-                  className="w-full h-full object-cover"
+                  src={isDark ? logoMidRightDark : logoMidRightLight}
+                  alt="Arym Logo"
+                  className="w-72 h-72 md:w-96 md:h-96 object-contain drop-shadow-2xl animate-float"
                 />
               </div>
             </div>
